@@ -22,11 +22,116 @@
 
     <body>
         <header>
-
+            <h1>Indie game development survey form</h1>
+            <p>
+                Thank you for taking the time to take this survey
+            </p>        
         </header>
 
         <main>
+            <!-- Form -->
+            <form>
+                <!--Name-->
+                <div>
+                    <label for="name">Name</label>
+                    <input name="name" type="text" placeholder="" required>
+                </div>
             
+                <!--Email-->
+                <div>
+                    <label for="email">Email</label>
+                    <input name="email" type="email" placeholder="" required>
+                </div>
+
+                 <!--Age-->
+                <div>
+                    <label for="age">Age</label>
+                    <input name="age" type="number" placeholder="" min="15" max="100" required>
+                </div>
+
+                 <!--Gender-->
+                <div>
+                    <p>Gender</p>
+                    <label>
+                        <input name="gender" type="radio" value="male" checked>
+                        Male
+                    </label>
+                    <label>
+                        <input name="gender" type="radio" value="famale">
+                        Female
+                    </label>
+                    <label>
+                        <input name="gender" type="radio" value="others">
+                        Others
+                    </label>
+                </div>
+
+                 <!--Development Time-->
+                <div>
+                    <label for="time">How many hours do you develope a Week?</label>
+                    <input name="time" type="number" placeholder="" min="5" max="100" required>
+                </div>
+
+                 <!--Platform-->
+                <div>
+                    <p>Which platform do you develope for?</p>
+                    <label>
+                        <input name="platform" type="checkbox" value="ps3">
+                        Playstation 3
+                    </label>
+                    <label>
+                        <input name="platform" type="checkbox" value="ps4">
+                        Playstation 4
+                    </label>
+                    <label>
+                        <input name="platform" type="checkbox" value="xbox360">
+                        Xbox 360
+                    </label>
+                    <label>
+                        <input name="platform" type="checkbox" value="xbox">
+                        Xbox One
+                    </label>
+                    <label>
+                        <input name="platform" type="checkbox" value="switch">
+                        Nintendo Switch
+                    </label>
+                    <label>
+                        <input name="platform" type="checkbox" value="pc">
+                        PC
+                    </label>
+                </div>
+
+                 <!--Genre-->
+                <div>
+                    <p>What is your favourite genre of game?</p>
+                    <select name="genre">
+                        <option selected disabled value="0">
+                            Select an option
+                        </option>
+                        <option value="RPG"> RPG </option>
+                        <option value="FPS"> FPS </option>
+                        <option value="MMO"> MMO </option>
+                        <option value="MMORPG"> MMORPG </option>
+                        <option value="Platformer"> Platformer </option>
+                    </select>
+                </div>
+
+                 <!--Journey-->
+                <div>
+                    <p>Write about your journey:</p>
+                    <textarea name="journey" placeholder="">
+
+                    </textarea>
+                </div>
+
+                 <!--Submit-->
+                <div>
+                    <button type="submit">
+                        Submit
+                    </button>
+                </div>
+            </form>
+
         </main>
 
     </body>
