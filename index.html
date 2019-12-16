@@ -14,9 +14,8 @@
 
         <!--Font links-->
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lakki+Reddy&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+        
         <!--CSS links-->
         <link rel="stylesheet" type="text/CSS" href="css/style.css">
 
@@ -37,25 +36,25 @@
             <!-- Form -->
             <form id="survey-form">
                 <!--Name Text-->
-                <div>
+                <div class="form-div">
                     <label id="name-label" for="name">Name</label>
-                    <input id="name" name="name" type="text" placeholder="Enter your name" required>
+                    <input class="form-data" id="name" name="name" type="text" placeholder="Enter your name" required>
                 </div>
             
                 <!--Email Text-->
-                <div>
+                <div class="form-div">
                     <label id="email-label" for="email">Email</label>
-                    <input id="email" name="email" type="email" placeholder="Enter your email" required>
+                    <input class="form-data" id="email" name="email" type="email" placeholder="Enter your email" required>
                 </div>
 
                  <!--Age Namber-->
-                <div>
+                <div class="form-div">
                     <label id="number-label" for="age">Age</label>
-                    <input id="number" name="age" type="number" placeholder="Enter your age" min="15" max="100" required>
+                    <input class="form-data" id="number" name="age" type="number" placeholder="Enter your age" min="15" max="100" required>
                 </div>
 
                  <!--Gender Radio-->
-                <div>
+                <div class="form-div">
                     <p>Gender</p>
                     <label>
                         <input name="gender" type="radio" value="male" checked>
@@ -72,13 +71,13 @@
                 </div>
 
                  <!--Development Time Number-->
-                <div>
+                <div class="form-div">
                     <label for="time">How many hours do you develope a Week?</label>
-                    <input name="time" type="number" placeholder="" min="5" max="100" required>
+                    <input class="form-data"  name="time" type="number" placeholder="" min="5" max="100" required>
                 </div>
 
                  <!--Platform Checkbox-->
-                <div>
+                <div class="form-div">
                     <p>Which platform do you develope for?</p>
                     <label>
                         <input name="platform" type="checkbox" value="ps3">
@@ -107,9 +106,9 @@
                 </div>
 
                  <!--Genre Select-->
-                <div>
+                <div class="form-div">
                     <p>What is your favourite genre of game?</p>
-                    <select id="dropdown" name="genre">
+                    <select class="form-data" id="dropdown" name="genre">
                         <option selected disabled value="0">
                             Select an option
                         </option>
@@ -122,15 +121,13 @@
                 </div>
 
                  <!--Journey Text area-->
-                <div>
+                <div class="form-div">
                     <p>Write about your journey:</p>
-                    <textarea name="journey" placeholder="">
-
-                    </textarea>
+                    <textarea class="form-data text-area" name="journey" placeholder=""></textarea>
                 </div>
 
                  <!--Submit Button-->
-                <div>
+                <div class="form-div">
                     <button id="submit" type="submit">
                         Submit
                     </button>
