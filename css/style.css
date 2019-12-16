@@ -1,0 +1,144 @@
+/* Global variables */
+:root {
+    /* Fallback to cursive*/
+    --primary-font: 'Lakki Reddy';
+    --secondary-font: 'Indie Flower';
+    --secondary-font2: 'Special Elite';
+    
+    /* Colors */
+    --primary-color1: #1d1919;
+    --primary-color2: #ffce76;
+    --secondary-color1: #419dff;
+    --secondary-color2: #0900c3;
+    --secondary-color3: #eeeeee;
+}
+
+/* Apply a natural box layout model to all elements, 
+but allowing components to change */
+html {
+    box-sizing: border-box;
+}
+
+*,
+::before, 
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--secondary-font2, cursive);
+    font-size: 1em;
+    margin: 0;
+    color: var(--primary-color1, black);
+    background-color: var(--secondary-color1, blue);
+
+    /* border: 2px solid red;
+    height: 100%; */
+}
+
+/* mobile friendly alternative 
+to using background-attachment: fixed */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--secondary-color3, white); 
+    /* background-image: url("../images/bg.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 50px auto 50px auto 50px auto;
+
+    background-color: var(--secondary-color1, blue);
+    /* border: 2px solid red; */
+}
+
+header {
+    /* border: 2px solid red; */
+    grid-column: 1 / -1;
+    grid-row: 2 / span 1;
+    background-color: var(--secondary-color1);
+    border-radius: 10px;
+    margin: 0 10px;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+}
+
+main {
+    /* border: 2px solid red; */
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+}
+
+footer {
+    /* border: 2px solid red; */
+    
+    grid-column: 1 / -1;
+    grid-row: 6 / span 1;
+    background-color: var(--secondary-color1);
+
+    border-radius: 10px;
+    margin: 0 10px 10px 10px;
+    /* font-family: var(--primary-font, cursive), cursive; */
+}
+
+footer p {
+    font-size: 1.25em;
+    line-height: .5em;
+    padding-top: 5px;
+    font-family: var(--primary-font);
+    margin-bottom: 0.5em;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+}
+
+/* Header tags */
+#title {
+    font-family: var(--primary-font, cursive), cursive;
+    padding: 10px 0px 0px 0px;
+}
+
+#description {
+    font-family: var(--primary-font, cursive), cursive;
+    font-size: 1.25em;
+}
+
+#title, #description {
+    /* border: 2px solid red; */
+    margin-top: 0;
+    margin-bottom: -.15em;
+    line-height: 1.5;
+
+}
+
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+  }
+
+/* Global Classes */
+.text-center {
+    text-align: center;
+}
+
