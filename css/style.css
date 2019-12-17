@@ -2,8 +2,8 @@
 :root {
     /* Fallback to cursive*/
     --primary-font: 'Lakki Reddy';
-    --secondary-font: 'Permanent Marker';
-    --secondary-font2: 'Permanent Marker';
+    --secondary-font: 'Pangolin';
+    --secondary-font2: 'Pangolin';
     
     /* Colors */
     --primary-color1: #1d1919;
@@ -47,7 +47,7 @@ body::before {
     width: 100%;
     z-index: -1;
     background: var(--secondary-color3, white); 
-    background-image: url("../images/bg.jpg");
+    background-image: url("../images/bg2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -131,9 +131,10 @@ footer p {
 
 #survey-form {
     padding: 1.5em 1.5em;
-    background-color: #ff73159c;
+    background-color: rgba(255, 138, 43, 0.853);
     border: 3px solid var(--primary-color1);
     border-radius: 20px;
+    box-shadow: 0 10px 19px rgb(255, 255, 255),0 10px 19px rgb(255, 255, 255);
     /* color: var(--secondary-color1); */
     /* opacity: 0.8; */
     /* color: var(--primary-color2); */
@@ -155,6 +156,13 @@ div.form-div > p {
 /* Global Classes */
 .text-center {
     text-align: center;
+}
+
+.note {
+    color: #000000;
+    border-bottom: 3px solid #000000;
+    margin: 0px;
+    user-select: none;
 }
 
 .form-div {
