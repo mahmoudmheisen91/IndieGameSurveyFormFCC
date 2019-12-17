@@ -208,3 +208,71 @@ input[type='radio'], input[type='checkbox'] {
   min-height: 1.25rem;
   min-width: 1.25rem;
 }
+
+/* Slider */
+input[type='range'] {
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 25px; 
+    background: #d3d3d3; 
+    outline: none; 
+    opacity: 0.7; 
+    /* -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    /* transition: opacity .2s; */ 
+}
+  
+/* Mouse-over effects */
+input[type='range']:hover {
+    opacity: 1; 
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px; 
+    height: 25px; 
+    background: rgb(36, 36, 36); /* Green background */
+    cursor: pointer; 
+}
+
+
+
+.others {
+    width: 15%;
+    background: none;
+    color: black;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 4px solid black;
+    padding: 2px;
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    
+}
+
+.others:focus {
+    background: none;
+    border: none;
+    border-bottom: 4px solid black;
+    outline: none;
+}
+
+.others::-webkit-input-placeholder { /* Edge */
+    color: #4b4b4b;
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+}
+  
+.others::-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #4b4b4b;
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+}
+  
+.others::placeholder {
+    color: #4b4b4b;
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+}
