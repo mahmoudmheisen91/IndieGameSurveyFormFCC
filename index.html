@@ -75,6 +75,29 @@
                     </label>
                 </div>
 
+                <!--Country Select-->
+                <div class="form-div select-container">
+                    <div class="left">
+                        <p>Country<sup>*</sup></p>
+                        <select class="form-data" id="dropdown" name="genre">
+                        <!-- style="width:50%"> -->
+                            <option selected disabled value="0">
+                                Select an option
+                            </option>
+                            <option value="USA"> USA </option>
+                            <option value="UK"> UK </option>
+                            <option value="CANADA"> CANADA </option>
+                            <option value="JORDAN"> JORDAN </option>
+                            <option value="OTHERS"> OTHERS </option>
+                        </select>
+                    </div>
+
+                    <div class="right">
+                        <label id="name-label" for="name">City<sup>*</sup></label>
+                        <input class="form-data" name="city" type="text" placeholder="Enter your city" required>
+                    </div>
+                </div>
+
                 <!-- Note -->
                 <div class="form-div">
                     <h2 class="note">Survey Info:</h2>
@@ -88,8 +111,10 @@
                 </div>
 
                  <!--Platform Checkbox-->
-                <div class="form-div">
+                <div class="form-div ">
                     <p>Which platform do you develope for?</p>
+                    <div class="select-container">
+                    <div class="left">
                     <label>
                         <input name="platform" type="checkbox" value="ps3">
                         Playstation 3
@@ -106,29 +131,101 @@
                         <input name="platform" type="checkbox" value="xbox">
                         Xbox One
                     </label>
+
                     <label>
                         <input name="platform" type="checkbox" value="switch">
                         Nintendo Switch
                     </label>
+                </div>
+                <div class="right2">
                     <label>
-                        <input name="platform" type="checkbox" value="pc">
-                        PC
+                        <input name="platform" type="checkbox" value="wiiu">
+                        Wii U
+                    </label>
+                    <label>
+                        <input name="platform" type="checkbox" value="Windows">
+                        PC / Windows
+                    </label>
+                    <label>
+                        <input name="platform" type="checkbox" value="mac">
+                        PC / Mac
+                    </label>
+                    <label>
+                        <input name="platform" type="checkbox" value="linux">
+                        PC / Linux
+                    </label>
+                    <label>
+                        <input name="platform" type="checkbox" value="others">
+                        <input class="form-data others others2" name="platform" type="text" placeholder="Others">
                     </label>
                 </div>
+                </div>
+            </div>
+                 <!--Genre Table-->
+                 <div class="form-div">
+                    <p>What is your favourite game genre?</p>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>1-least</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5-most</th>
+                        </tr>
+                        <tr>
+                            <td>RPG</td>
+                            <td><input type="radio" name="row-1" ></td>
+                            <td><input type="radio" name="row-1" ></td>
+                            <td><input type="radio" name="row-1" checked></td>
+                            <td><input type="radio" name="row-1" ></td>
+                            <td><input type="radio" name="row-1" ></td>
+                            
+                        </tr>
+                        <tr>
+                            <td>FPS</td>
+                            <td><input type="radio" name="row-2" ></td>
+                            <td><input type="radio" name="row-2" ></td>
+                            <td><input type="radio" name="row-2" checked></td>
+                            <td><input type="radio" name="row-2" ></td>
+                            <td><input type="radio" name="row-2" ></td>
+                        </tr>
+                        <tr>
+                            <td>MMO</td>
+                            <td><input type="radio" name="row-3" ></td>
+                            <td><input type="radio" name="row-3" ></td>
+                            <td><input type="radio" name="row-3" checked></td>
+                            <td><input type="radio" name="row-3" ></td>
+                            <td><input type="radio" name="row-3" ></td>
+                        </tr>
 
-                 <!--Genre Select-->
-                <div class="form-div">
-                    <p>What is your favourite genre of game?</p>
-                    <select class="form-data" id="dropdown" name="genre">
-                        <option selected disabled value="0">
-                            Select an option
-                        </option>
-                        <option value="RPG"> RPG </option>
-                        <option value="FPS"> FPS </option>
-                        <option value="MMO"> MMO </option>
-                        <option value="MMORPG"> MMORPG </option>
-                        <option value="Platformer"> Platformer </option>
-                    </select>
+                        <tr>
+                            <td>MMORPG</td>
+                            <td><input type="radio" name="row-4" ></td>
+                            <td><input type="radio" name="row-4" ></td>
+                            <td><input type="radio" name="row-4" checked></td>
+                            <td><input type="radio" name="row-4" ></td>
+                            <td><input type="radio" name="row-4" ></td>
+                        </tr>
+
+                        <tr>
+                            <td>Adventure</td>
+                            <td><input type="radio" name="row-5" ></td>
+                            <td><input type="radio" name="row-5" ></td>
+                            <td><input type="radio" name="row-5" checked></td>
+                            <td><input type="radio" name="row-5" ></td>
+                            <td><input type="radio" name="row-5" ></td>
+                        </tr>
+
+                        <tr>
+                            <td>Platformer</td>
+                            <td><input type="radio" name="row-6" ></td>
+                            <td><input type="radio" name="row-6" ></td>
+                            <td><input type="radio" name="row-6" checked></td>
+                            <td><input type="radio" name="row-6" ></td>
+                            <td><input type="radio" name="row-6" ></td>
+                        </tr>
+                    </table>
                 </div>
 
                  <!--Journey Text area-->
