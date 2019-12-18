@@ -71,7 +71,7 @@
                     </label>
                     <label>
                         <input name="gender" type="radio" value="others">
-                        <input class="form-data others" name="other" type="text" placeholder="Others" required>
+                        <input class="form-data others" name="other" type="text" placeholder="Others">
                     </label>
                 </div>
 
@@ -79,9 +79,9 @@
                 <div class="form-div select-container">
                     <div class="left">
                         <p>Country<sup>*</sup></p>
-                        <select class="form-data" id="dropdown" name="genre">
-                        <!-- style="width:50%"> -->
-                            <option selected disabled value="0">
+                        <select required class="form-data" id="dropdown" name="genre">
+                            <!-- value is empty for select required -->
+                            <option selected disabled value="">
                                 Select an option
                             </option>
                             <option value="USA"> USA </option>
@@ -114,64 +114,64 @@
                 <div class="form-div ">
                     <p>Which platform do you develope for?</p>
                     <div class="select-container">
-                    <div class="left">
-                    <label>
-                        <input name="platform" type="checkbox" value="ps3">
-                        Playstation 3
-                    </label>
-                    <label>
-                        <input name="platform" type="checkbox" value="ps4">
-                        Playstation 4
-                    </label>
-                    <label>
-                        <input name="platform" type="checkbox" value="xbox360">
-                        Xbox 360
-                    </label>
-                    <label>
-                        <input name="platform" type="checkbox" value="xbox">
-                        Xbox One
-                    </label>
+                        <div class="left">
+                            <label>
+                                <input name="platform" type="checkbox" value="ps3">
+                                Playstation 3
+                            </label>
+                            <label>
+                                <input name="platform" type="checkbox" value="ps4">
+                                Playstation 4
+                            </label>
+                            <label>
+                                <input name="platform" type="checkbox" value="xbox360">
+                                Xbox 360
+                            </label>
+                            <label>
+                                <input name="platform" type="checkbox" value="xbox">
+                                Xbox One
+                            </label>
 
-                    <label>
-                        <input name="platform" type="checkbox" value="switch">
-                        Nintendo Switch
-                    </label>
+                            <label>
+                                <input name="platform" type="checkbox" value="switch">
+                                Nintendo Switch
+                            </label>
+                        </div>
+                        <div class="right">
+                            <label>
+                                <input name="platform" type="checkbox" value="wiiu">
+                                Wii U
+                            </label>
+                            <label>
+                                <input name="platform" type="checkbox" value="Windows">
+                                PC / Windows
+                            </label>
+                            <label>
+                                <input name="platform" type="checkbox" value="mac">
+                                PC / Mac
+                            </label>
+                            <label>
+                                <input name="platform" type="checkbox" value="linux">
+                                PC / Linux
+                            </label>
+                            <label>
+                                <input name="platform" type="checkbox" value="others">
+                                <input class="form-data others others2" name="platform" type="text" placeholder="Others">
+                            </label>
+                        </div>
+                    </div>
                 </div>
-                <div class="right2">
-                    <label>
-                        <input name="platform" type="checkbox" value="wiiu">
-                        Wii U
-                    </label>
-                    <label>
-                        <input name="platform" type="checkbox" value="Windows">
-                        PC / Windows
-                    </label>
-                    <label>
-                        <input name="platform" type="checkbox" value="mac">
-                        PC / Mac
-                    </label>
-                    <label>
-                        <input name="platform" type="checkbox" value="linux">
-                        PC / Linux
-                    </label>
-                    <label>
-                        <input name="platform" type="checkbox" value="others">
-                        <input class="form-data others others2" name="platform" type="text" placeholder="Others">
-                    </label>
-                </div>
-                </div>
-            </div>
                  <!--Genre Table-->
-                 <div class="form-div">
+                 <div class="form-div hide">
                     <p>What is your favourite game genre?</p>
                     <table>
                         <tr>
                             <th></th>
-                            <th>1-least</th>
+                            <th>1</th>
                             <th>2</th>
                             <th>3</th>
                             <th>4</th>
-                            <th>5-most</th>
+                            <th>5</th>
                         </tr>
                         <tr>
                             <td>RPG</td>
@@ -231,7 +231,7 @@
                  <!--Journey Text area-->
                 <div class="form-div">
                     <p>Write about your journey:</p>
-                    <textarea class="form-data text-area" name="journey" placeholder=""></textarea>
+                    <textarea class="form-data" name="journey" placeholder="Enter text"></textarea>
                 </div>
 
                 <!-- Note -->
@@ -247,7 +247,7 @@
                     </label>
                     <label>
                         <input name="Agreement" type="checkbox" value="agree" required>
-                        I agree to the Terms of Service and Privacy Policy</a>
+                        I agree to the Terms of Service and Privacy Policy<sup>*</sup></a>
                     </label>
                 </div>
 
